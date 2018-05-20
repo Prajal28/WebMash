@@ -1,3 +1,4 @@
+<!-- Mishra, Prajal ; Project 2, October 26, 2016 -->
 
 <!DOCTYPE html>
 
@@ -5,34 +6,17 @@
   <head>
     <title>Web Mashup: Display Address with Weather Details</title>
     <meta charset="utf-8"/>
-    <style>
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      
-    
-      </style>
+    <link rel="stylesheet" type="text/css" href="webmash.css">
     <script type="text/javascript" src="webmash.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6cgX58hMqtLANvNoBnJGFEQmtEUK-B3M&callback=initMap" type="text/javascript" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhsXimaQCDvn6qhiqwCOmr4ItBu5HBoOU&callback=initMap" type="text/javascript" ></script>
   </head>
-  <body onload="initMap();">
-  <p><input type="button" name="clear" value="Clear" onclick="clearhistory()"></p>
-    <textarea id="history"></textarea>
-    
-      <!-- Supply a default place ID for a place in Brooklyn, New York. -->
-     
-      
-    <div id="map" style="width: 600px; height: 500px;" ></div><br/>
 
-    <div id="temperature">&nbsp;</div>
-     <div id="clouds">&nbsp;</div>
-      <div id="windSpeed">&nbsp;</div>
+  <body onload="initMap();">
+   <p><input type="button" name="clear" value="Clear" onclick="clearhistory()"></p>
+  
+    <div id="map" style="width: 600px; height: 500px;" ></div><br/>
+    
+    <textarea id="history" rows="5" cols="100"></textarea>
     
   </body>
 </html>
